@@ -1,4 +1,4 @@
-.main1 {
+.section1 {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -7,9 +7,9 @@
   background-color: $colorWhite;
 }
 
-.main1__subtitle {
+.section1__subtitle {
   color: #a5d6ee;
-  font-family: "Roboto", serif;
+  font-family: $fontText;
   margin: 30px 200px 1px 0;
   font-size: 14px;
   font-weight: normal;
@@ -18,10 +18,11 @@
   letter-spacing: normal;
   line-height: 2.14;
 }
-.main1__title {
+.section1__title {
   width: 290px;
   margin-bottom: 15px;
-  font-family: "Roboto", serif;
+  font-family: $fontTitle;
+  text-transform: capitalize;
   font-size: 24px;
   font-weight: bold;
   font-stretch: normal;
@@ -29,9 +30,9 @@
   line-height: 1.25;
   letter-spacing: normal;
 }
-.main1__text {
+.section1__text {
   width: 290px;
-  font-family: "Roboto", serif;
+  font-family: $fontText;
   font-size: 18px;
   font-weight: normal;
   font-stretch: normal;
@@ -41,7 +42,7 @@
   margin-bottom: 30px;
 }
 
-.main1__btn {
+.section1__btn {
   width: 76px;
   height: 45px;
   background-color: $colorWhite;
@@ -50,7 +51,7 @@
   padding: 0 25px;
   border-radius: 22.5px;
   text-align: center;
-  border: #ee6722 solid 2px;
+  border: $colorOrange solid 2px;
 
   &--text {
     text-align: center;
@@ -58,6 +59,6 @@
     color: #ee6722;
     font-size: 20px;
     font-weight: 600;
-    font-family: "Roboto", serif;
+    font-family: $fontText;
   }
 }
