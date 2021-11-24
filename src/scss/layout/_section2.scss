@@ -8,6 +8,9 @@
   align-items: center;
   text-align: center;
 
+  @media (min-width: 1200px) {
+    padding-top: 60px;
+  }
   &__title {
     font-family: $fontTitle;
     text-align: center;
@@ -63,6 +66,10 @@
     margin: 45px 68px 60px 68px;
     @media (min-width: 768px) {
       width: 210px;
+    }
+
+    @media (min-width: 1200px) {
+      width: 255px;
     }
 
     &--text {
