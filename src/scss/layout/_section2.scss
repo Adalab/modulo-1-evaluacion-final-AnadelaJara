@@ -12,24 +12,43 @@
     font-family: $fontTitle;
     text-align: center;
     text-transform: capitalize;
+    padding-bottom: 45px;
   }
-  &__articles {
+  &__grid {
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(3, 1fr);
-    width: 180px;
-    height: 63px;
-    text-align: center;
-    margin: 45px 70px 45px;
+    justify-content: center;
+
+    @media (min-width: 768px) {
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-rows: 1fr;
+    }
+  }
+  &__articles {
+    padding-bottom: 45px;
+    margin-bottom: 45px;
+    margin: 0 70px;
+    @media (min-width: 768px) {
+      margin: 0 40px;
+    }
 
     &--title1 {
       font-family: $fontTitle;
       font-size: 18px;
+      text-align: center;
+      @media (min-width: 768px) {
+        font-size: 20px;
+        padding-bottom: 14px;
+      }
     }
     &--text1 {
       font-family: $fontText;
       text-align: center;
       font-size: 18px;
+      @media (min-width: 768px) {
+        font-size: 20px;
+      }
     }
   }
 
@@ -41,7 +60,11 @@
     border: none;
     border-radius: 22.5px;
     text-align: center;
-    margin: 0px 68px 60px 68px;
+    margin: 45px 68px 60px 68px;
+    @media (min-width: 768px) {
+      width: 210px;
+    }
+
     &--text {
       font-size: 20px;
       font-family: $fontText;
