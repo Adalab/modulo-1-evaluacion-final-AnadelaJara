@@ -90,6 +90,12 @@
   border-radius: 22.5px;
   text-align: center;
   border: $colorOrange solid 2px;
+  transition: background-color linear 2s, border ease 2s;
+  &:hover {
+    background-color: $colorOrange;
+    border: 2px solid $colorPurchase;
+  }
+
   @media (min-width: 768px) {
     width: 91px;
     height: 45px;
