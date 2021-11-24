@@ -19,7 +19,6 @@
 .header__section {
   display: flex;
   flex-direction: column;
-  flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
 }
@@ -37,6 +36,13 @@
   line-height: 1.31;
   letter-spacing: normal;
   font-family: $fontTitle;
+
+  @media (min-width: 768px) {
+    width: 690px;
+    height: 212px;
+    margin: 384px 39px 20px 39px;
+    font-size: 80px;
+  }
 }
 
 .header__text {
@@ -45,8 +51,12 @@
   font-size: 16px;
   text-align: center;
   padding-bottom: 45px;
-}
 
+  @media (min-width: 768px) {
+    margin: 20px 204px 120px 204px;
+    font-size: 24px;
+  }
+}
 .header__scroll {
   width: 45px;
   height: 45px;
@@ -54,4 +64,8 @@
   border-radius: 22.5px;
   background-color: $colorWhite;
   margin-bottom: 53px;
+
+  @media (min-width: 768px) {
+    margin-bottom: 45px;
+  }
 }

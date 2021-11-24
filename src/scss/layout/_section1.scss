@@ -17,6 +17,7 @@
   font-style: normal;
   letter-spacing: normal;
   line-height: 2.14;
+  text-transform: capitalize;
 }
 .section1__title {
   width: 290px;
@@ -52,7 +53,6 @@
   border-radius: 22.5px;
   text-align: center;
   border: $colorOrange solid 2px;
-
   &--text {
     text-align: center;
     line-height: 2.25;
