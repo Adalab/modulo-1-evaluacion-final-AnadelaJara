@@ -1,0 +1,48 @@
+a {
+  color: $colorWhite;
+  text-decoration: none;
+}
+
+.footer {
+  width: 100%;
+  height: 465px;
+  background-color: $colorFooter;
+  color: $colorWhite;
+  font-family: $fontText;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  &__btn {
+    width: 45px;
+    height: 45px;
+    background-color: $colorWhite;
+    border-radius: 50%;
+    line-height: 60px;
+    transform: translateY(-50%);
+    top: 0;
+  }
+
+  &__nav {
+    text-transform: uppercase;
+    font-size: 16px;
+    line-height: 1.88;
+    &--articles {
+      list-style: none;
+    }
+    &--rrss {
+      padding-top: 10px;
+      list-style: none;
+    }
+  }
+  &__span {
+    font-size: 14px;
+    line-height: 2.14;
+    padding-bottom: 45px;
+  }
+}
+
+.heart {
+  color: $colorOrange;
+}
