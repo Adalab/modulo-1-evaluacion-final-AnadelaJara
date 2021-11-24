@@ -19,13 +19,14 @@
 .header__section {
   display: flex;
   flex-direction: column;
-  padding-top: 320px;
   flex-wrap: wrap;
   justify-content: flex-end;
   align-items: center;
 }
 
 .header__title {
+  width: 290px;
+  margin: 284px 15px 0;
   text-transform: uppercase;
   font-size: 42px;
   text-align: center;
