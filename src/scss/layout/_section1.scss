@@ -90,9 +90,9 @@
   border-radius: 22.5px;
   text-align: center;
   border: $colorOrange solid 2px;
-  transition: background-color linear 2s, border ease 2s;
+  transition: background-color ease 2s, color ease 2s, border ease 2s;
   &:hover {
-    background-color: $colorOrange;
+    background-color: $colorBlack;
     border: 2px solid $colorPurchase;
   }
 

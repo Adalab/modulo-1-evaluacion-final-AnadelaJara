@@ -64,6 +64,13 @@
     border-radius: 22.5px;
     text-align: center;
     margin: 45px 68px 60px 68px;
+    transition: background-color linear 2s, color ease 2s, border ease 2s;
+    &:hover {
+      background-color: $colorWhite;
+      color: $colorOrange;
+      border: 2px solid $colorBlack;
+    }
+
     @media (min-width: 768px) {
       width: 210px;
     }
