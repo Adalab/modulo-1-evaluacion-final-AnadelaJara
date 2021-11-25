@@ -4,7 +4,6 @@ a {
 }
 .footer {
   width: 100%;
-  height: 465px;
   background-color: $colorFooter;
   color: $colorWhite;
   font-family: $fontText;
@@ -13,16 +12,19 @@ a {
   justify-content: space-between;
   align-items: center;
   text-align: center;
+
   @media (min-width: 768px) {
     flex-direction: row;
     align-items: flex-start;
     justify-content: space-between;
-    padding-bottom: 39px;
-    height: 240px;
+    padding-bottom: 45px;
     padding-left: 30px;
 
     @media (min-width: 1200px) {
-      padding: 0 370px;
+      padding-right: 370px;
+      padding-left: 200px;
+      height: 240px;
+      justify-content: center;
     }
   }
 
@@ -31,12 +33,18 @@ a {
     height: 45px;
     background-color: $colorWhite;
     border-radius: 50%;
-    transform: translate(0, -490px);
+    transform: translateY(-20px);
     line-height: 60px;
     top: 0;
-    position: relative;
+    text-align: center;
+
     @media (min-width: 768px) {
-      transform: translate(-360px, -20px);
+      transform: translate(220px, -20px);
+    }
+    @media (min-width: 1200px) {
+      transform: translate(250px, -20px);
+      width: 200px;
+      height: 45px;
     }
   }
 
@@ -44,9 +52,13 @@ a {
     text-transform: uppercase;
     font-size: 16px;
     line-height: 1.88;
+    width: 300px;
+    text-align: center;
+
     @media (min-width: 768px) {
       line-height: 30px;
     }
+
     &--articles {
       list-style: none;
       padding-top: 60px;
@@ -55,14 +67,24 @@ a {
         padding-top: 45px;
         padding-left: 120px;
       }
+      @media (min-width: 1200) {
+        width: 160px;
+        padding-right: 150px;
+      }
     }
     &--rrss {
       padding-top: 30px;
       list-style: none;
+      width: 300px;
+      text-align: center;
+
       @media (min-width: 768px) {
         text-align: left;
         padding-top: 45px;
         padding-left: 50px;
+      }
+      @media (min-width: 1200) {
+        width: 160px;
       }
     }
   }
@@ -71,9 +93,18 @@ a {
     line-height: 2.14;
     padding-top: 30px;
     padding-bottom: 45px;
+
     @media (min-width: 768px) {
       padding-top: 45px;
       order: -1;
+      width: 130px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+    @media (min-width: 1200px) {
+      width: 100%;
     }
   }
 }
