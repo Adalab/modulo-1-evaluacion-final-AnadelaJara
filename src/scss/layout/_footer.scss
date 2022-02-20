@@ -9,42 +9,54 @@ a {
   font-family: $fontText;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   align-items: center;
-  text-align: center;
+  padding-bottom: 30px;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 
-  @media (min-width: 768px) {
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-between;
-    padding-bottom: 45px;
-    padding-left: 30px;
+    @media (min-width: 768px) {
+      flex-direction: row;
+      align-items: flex-start;
+      justify-content: space-between;
+      padding-bottom: 45px;
+      padding-left: 30px;
 
-    @media (min-width: 1200px) {
-      padding-right: 370px;
-      padding-left: 200px;
-      height: 240px;
-      justify-content: center;
+      @media (min-width: 1200px) {
+        padding-right: 370px;
+        padding-left: 200px;
+        height: 240px;
+        justify-content: center;
+      }
     }
   }
 
   &__btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 50%;
     width: 45px;
     height: 45px;
-    background-color: $colorWhite;
-    border-radius: 50%;
-    transform: translateY(-20px);
-    line-height: 60px;
-    top: 0;
-    text-align: center;
-
-    @media (min-width: 768px) {
-      transform: translate(220px, -20px);
+    transform: translateY(-50%);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    animation: 4s ease infinite scrollUp;
+  }
+  @keyframes scrollUp {
+    0% {
+      transform: translateY(-50%) rotate(0deg);
     }
-    @media (min-width: 1200px) {
-      transform: translate(250px, -20px);
-      width: 200px;
-      height: 45px;
+    20% {
+      transform: translateY(-50%) rotate(370deg);
+    }
+    30% {
+      transform: translateY(-50%) rotate(360deg);
+    }
+    100% {
+      transform: translateY(-50%) rotate(360deg);
     }
   }
 
@@ -57,8 +69,12 @@ a {
 
     @media (min-width: 768px) {
       line-height: 30px;
+      width: 30%;
     }
 
+    @media (min-width: 1200) {
+      width: 160px;
+    }
     &--articles {
       list-style: none;
       padding-top: 60px;
